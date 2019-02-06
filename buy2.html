@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="buy2.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Fanwood+Text|Poppins|ubuntu|Roboto+Condensed|Vidaloka|Adamina" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="changeimage(1)">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 top_nav">
+
+
+    </div>
+  </div>
+  <div class="main">
+    <header class="row">
+      <div class="col-md-6 col-sm-4 col-xs-4">
+
+      </div>
+      <div class="col-md-6 col-sm-8 col-xs-8 nav2">
+        <nav>
+         <ul>
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Features</a>
+           <a href="#">Blog</a>
+           <a href="#">Shop</a>
+           <a href="#">Contacts</a>
+           <a href="#"><i class="fa fa-search" id="f1" style="width: 35px;height: 35px;"></i></a>
+           <a href="#"><i class="fa fa-shopping-cart" style="width: 35px;height: 35px;"></i></a>
+         </ul>
+        </nav>
+      </div>
+      </header>
+    </div>
+    <br><br>
+    <div class="col-md-12 col-sm-12 col-sx-12">
+        <div class="col-md-6">
+            <div class="image">
+              <img id='myimage' src='ABC.jpg'>
+                <nav>
+                  <ul type="none">
+                    <img src="back.jpg" id="im01">
+                    <img src="back1.jpg" id="im01">
+                    <img src="back2.jpg" id="im01">
+                  </ul>
+                </nav>
+      <script>
+      var imageID=0;
+      function changeimage(every_seconds)
+      {
+       if(!imageID)
+         {
+           document.getElementById("myimage").src="back.jpg";
+           imageID++;
+          }
+       else
+         {
+           if(imageID==1)
+           {
+           document.getElementById("myimage").src="back1.jpg";
+           imageID++;
+           }
+       else
+        {
+           if(imageID==2)
+           {
+           document.getElementById("myimage").src="back2.jpg";
+           imageID=0;
+           }
+         }
+       }
+       setTimeout("changeimage("+every_seconds+")",((every_seconds)*5000));
+      }
+      </script>
+      </div>
+        </div>
+        <div class="col-md-6">
+            <h3 id="head">Backstage Riviera Chambray Tie-Shoulder Tank Top</h3>
+            <h2 style="font-family: Poppins, sans-serif;"><b>Rs 1200</b></h2><br>
+            <h5 style="font-family: Poppins, sans-serif;color:#adadad;" id="m4">Fashion has always been so temporary and uncertain.</h5>
+            <h4 style="font-family: Poppins, sans-serif;color:#adadad;">Size</h4>
+            <select name="Choose an option" id="m4" class="selection">
+                <option name="Choose an option">Choose an Option</option>
+                <option name="xl">XL</option>
+                <option name="l">L</option>
+                <option name="s">S</option>
+            </select>
+            <h4 style="font-family: Poppins, sans-serif;color:#adadad;">Quantity</h4>
+            <input type="text" value="1" name="t1" id="t01"><br><br><br>
+            <input type="button" value="Buy" id="button"><hr>
+            <h4 class="infos">Product Info</h4>
+            <h5 class="info">I'm a product detail. I'm a great place to add more
+              information about your product such as sizing
+              , material, care and cleaning instructions. This is also
+               a great space to write what makes this product
+               special and how your customers can benefit from
+               this item.</h5><hr>
+            <h4 class="infos">Return and refund Policy</h4>
+            <h5 class="info">I’m a return and refund policy. I’m a great place to
+               let your customers know what to do in case they are
+               dissatisfied with their purchase. Having a
+               straightforward refund or exchange policy is a great
+                way to build trust and reassure your customers that they can buy with confidence.</h5><hr>
+            <h4 class="infos">Shipping Details</h4>
+            <h5 class="info">I'm a shipping policy. I'm a great place to add more
+              information about your shipping methods, packaging and cost.
+              Providing straightforward information about your shipping policy is a
+              great way to build trust and reassure your customers that
+              they can buy from you with confidence.</h5>
+
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 m2">
+        <h2 style="color:black;font-family: Poppins, sans-serif;text-align: center;">
+          Related Products</h2><br>
+        <nav>
+            <ul class="m3" type="none">
+            <a href="#"> <img src="back.jpg" id="im02"></a>
+            <a href="#">    <img src="red.jpg" id="im02"></a>
+                <a href="#"><img src="ABC.jpg" id="im02"></a>
+                <a href="#"><img src="ba.jpg" id="im02"></a>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+    <div class="footer-container">
+     <footer id="footer">
+       <div class="row">
+         <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+           <h4 style="font-size:36px;font-family: 'Cinzel Decorative', cursive;"><b>Wardrobe</b></h4>
+           <ul>
+
+
+           </ul>
+         </div>
+       <div class="row">
+         <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+           <h4>Categories</h4>
+           <nav>
+             <a href="#">Athletic Shop</a><br>
+             <a href="#">Fashion Sneakers</a><br>
+             <a href="#">Jackets</a><br>
+             <a href="#">Outdoor Shop</a><br>
+             <a href="#">Shirts & Tops</a><br>
+             <a href="#">Dresses</a><br>
+         </nav>
+         </div>
+         <div class="container">
+           <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+             <h4>Follow Us</h4>
+             <i class="fa fa-twitter f1" style="width: 35px;height: 35px;"></i>
+             <a href="#"><i class="fa fa-facebook f1" style="width: 35px;height: 35px;"></i></a>
+             <i class="fa fa-google-plus f1" style="width: 35px;height: 35px;"></i>
+             <i class="fa fa-pinterest f1" style="width: 35px;height: 35px;"></i>
+           </div>
+           <div class="row">
+             <div class="col-xs-12 col-sm-3 col-md-2 col-lg-3">
+               <h4>Newsletter Sign Up</h4>
+               <form>
+                 <input class="input" type="text" name="email" size="18" value="Enter your email">
+                 <button class="input" type="submit" name="submitNewsletter">
+                   <span><i class="fa fa-arrow-right"></i></span>
+                 </button>
+               </form>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+     </div>
+   </div>
+ </div>
+    </body>
+</html>
